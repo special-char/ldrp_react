@@ -1,7 +1,14 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import App from './app';
 
 const container = document.getElementById('app');
 
-const root = createRoot(container); // createRoot(container!) if you use TypeScript
-root.render(<h1>Hello world</h1>);
+// Component
+// Rule1: first letter Capital
+// Rele2: return single element
+// rule3: apply style as an object and properties in camel case
+// rule4: use className instead class
+
+const root = createRoot(container);
+root.render(<App />);
