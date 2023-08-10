@@ -1,0 +1,21 @@
+{
+  "name": "ldrp_react",
+  "version": "0.0.1",
+  "description": "Ldrp react js 2 days workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production"
+  },
+  "keywords": [
+    "react",
+    "ldrp",
+    "students"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
