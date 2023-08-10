@@ -1,10 +1,10 @@
 h1 {
-    color: red;
+  color: red;
 }
 
 div {
-    display: grid;
-    transition: all .5s;
-    user-select: none;
-    background: linear-gradient(to bottom, white, black);
+  display: grid;
+  transition: all 0.5s;
+  user-select: none;
+  background: linear-gradient(to bottom, white, black);
 }
