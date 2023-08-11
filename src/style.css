@@ -1,10 +1,10 @@
-h1 {
-  color: red;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-div {
-  display: grid;
-  transition: all 0.5s;
-  user-select: none;
-  background: linear-gradient(to bottom, white, black);
+
+@layer components {
+  .btn {
+    @apply rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
+  }
 }
