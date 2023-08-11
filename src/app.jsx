@@ -1,21 +1,54 @@
-import React from 'react';
+/* eslint-disable react/prefer-stateless-function */
+import React, { Component } from 'react';
 
 const bgColor = 'red';
 const color = 'white';
 
-function App() {
+// let count = 0;
+
+class Child1 extends Component {
+  state = {
+    count: 0,
+  };
+
+  render() {
+    return (
+      <div>
+        <button
+          type="button"
+          onClick={() => {
+            this.setState({ count: 5 });
+          }}
+        >
+          +
+        </button>
+        {this.state.count}
+        <button
+          type="button"
+          onClick={() => {
+            // count = count - 1;
+            // console.log(count);
+          }}
+        >
+          -
+        </button>
+      </div>
+    );
+  }
+}
+
+const Child2 = () => {
+  return <h1>Hello Child 2</h1>;
+};
+
+// FUnction component
+function App(props) {
   return (
     <>
-      <h1
-        style={{
-          backgroundColor: bgColor,
-          color,
-        }}
-        className="box"
-      >
-        Hello Yagnesh
-      </h1>
       <p>Lorem ipsum dolor sit amet.</p>
+      <input type="checkbox" />
+      <Child1 />
+      <Child2 />
     </>
   );
 }
